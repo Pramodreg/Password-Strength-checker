@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+    span{
+     color: red;
+    }
+    .package{
+        background-image: url(images/photo);
+    background-color: antiquewhite;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    overflow: auto;
+    text-align: center;
+    height: 700px;
+}
+.package h1{
+    font-size: 38px;
+    margin-bottom: 90px;
+}
+.box{
+    justify-content: space-between;
+    justify-content: center;
+    display: inline-block;
+    display: flex;
+}
+.month{
+    height: 250px;
+    width: 200px;
+    background-color:rgb(138, 192, 223);
+    text-align: center;
+    border-radius: 10px;
+    margin: 120px 50px;
+    color: black;
+    margin-bottom: 40px;
+    opacity: 0.6;
+    font-weight: bold;
+}
+.month h3{
+    margin-top: 25px;
+    padding-top: 20px;
+} 
+input{
+    background-color: rgb(252, 120, 93);
+    padding: 8px 7px;
+    margin-top: 50px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+}
+input:hover{
+    transform: translateY(7px);
+    background-color: chartreuse;
+    color: black;
+    padding: 20px 15px;
+    cursor: pointer;
+}
+#animate{
+    height: 90px;
+    width: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    padding: 40px 20px;
+    font-size: larger;
+    vertical-align: middle;
+    line-height: 20px;
+    background: linear-gradient(right pink, gray, yellowgreen);
+    margin-top: 20px;
+}
+@keyframes amazing{
+    0%{background-color: red; border-radius: 0%; text-decoration: solid;}
+    10%{background-color: green; border-radius: 10%;}
+    20%{background-color: yellow; border-radius: 20%; text-decoration: underline;}
+    30%{background-color: blue; border-radius: 30%;}
+    40%{background-color: red; border-radius: 40%; text-decoration: wavy;}
+    50%{background-color: green; border-radius: 50%;}
+    60%{background-color: palevioletred; border-radius: 40%; text-decoration: overline;}
+    70%{background-color: turquoise; border-radius: 30%;}
+    80%{background-color: red; border-radius: 20%; text-transform: lowercase;}
+    90%{background-color: green; border-radius: 10%;}
+    100%{background-color: yellow; border-radius: 0%;}
+
+
+}
+#animate{
+    animation-name: amazing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    opacity: 0.5;
+}
+#welcome{
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    animation-name: amazing;
+    padding-left: 7px;
+    color: white;
+    font-weight: bolder;
+}
+
+#sec2{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(248, 212, 158);
+    background-image: url(images/photo2);
+    color: black;
+}
+#register{
+    height: 400px;
+    width: 350px;
+    background-color: cadetblue;
+    margin-left: 100px;
+    position: absolute;
+    left: 31%;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0.8;
+}
+#sec2 #member{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+#register input{
+    color: white;
+    background-color:rgb(230, 244, 209);
+    padding-left: 8px;
+}
+#register #btn{
+    margin-left: 50px;
+    background-color: gold;
+}
+    </style>
+</head>
+<body>
+    <section class="package">
+        <h1>Enroll into our <span>Community</span></h1>
+        <div class="box">
+        <div class="month">
+           <h3> <span>System Security</span> </h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis explicabo nulla quaerat atque blanditiis!</p>
+        </div>
+        <div class="month">
+            <h3><span>Data Security</span> </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo natus aspernatur unde accusamus commodi. Beatae.</p>
+        </div>
+        <div class="month">
+            <h3><span>Ethical Hacking</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit at alias, ad velit deserunt mollitia.</p>
+        </div>
+        <div class="month">
+            <h3> <span>Machine Learning</span> </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus delectus nam adipisci ullam! Ullam!</p>
+        </div>
+    </div>
+    <a href="index.html"><input type="submit" value="Go to Home"></a>
+
+    <div id="animate">
+        <p id="welcome">Welcome to Online Community Center!!</p>
+    </div>
+    </section>
+
+    <section id="sec2">
+        <div id="member">
+            <h1>Become a <span>Member</span></h1>
+        </div>
+        <div id="register">
+            Username:<input type="email" placeholder="enter your username"><br>
+            Password:<input type="password" placeholder="enter your password"><br>
+            Password:<input type="password" placeholder="confirm password">
+
+            <input type="submit" value="Get membership" id="btn">
+        </div>
+    </section>
+    
+</body>
+</html>

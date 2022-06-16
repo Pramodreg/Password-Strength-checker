@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Community</title>
+  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <form>
+  <div class="pw-meter" onsubmit="return myfu()">  <!--start of main form-->
+    <header>Welcome to <span>Online</span> Community</header>
+    <h2 style="text-align: center;"><span>Sign-up</span> to Register</h2>
+    <div class="form-element">
+      Username:<input type="text"><br>
+      Password:<input type="password" id="password"><span id="spn1"> </span><br>
+      Confirm Password:<input type="password" id="passwords"> <span id="spn2"> </span>
+      <div class="pw-display-toggle-btn">
+        <i class="fa fa-eye"></i>
+        <i class="fa fa-eye-slash"></i>
+      </div>
+      <div class="pw-strength">
+        <span>Weak</span>
+        <span></span>
+      </div>
+      </div>
+    <div class="captcha-area">  <!--start of the captcha code-->
+      <div class="captcha-img">
+        <img src="captcha-bg.png" alt="Captch Background">
+        <span class="captcha"></span>
+      </div>
+      <button class="reload-btn"><i class="fas fa-redo-alt"></i></button>
+    </div>
+    <form action="#" class="input-area">
+      <input type="text" placeholder="Enter captcha" maxlength="6" spellcheck="false" required>
+      <button class="check-btn">Check</button>
+    </form>
+    <div class="status-text"></div>
+    <input type="submit" value="Create account" id="btn-createacc">  <!--</a><a href="dashboard.html" target="_self"></a>-->
+  </div>
+</form>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
