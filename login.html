@@ -19,14 +19,21 @@
       <h2 style="text-align: center"><span>Login</span></h2>
       <div class="form-element">
         Username:<input type="text" /><br />
-        Password:<input type="password" id="password" /><span id="spn1"> </span
-        ><br />
-        <!-- Confirm Password:<input type="password" id="passwords" /> -->
+        Password:
+        <div class="password-eye">
+          <input type="password" id="password" /><span id="spn1"> </span>
+          <div class="pw-display-toggle-btn">
+            <i class="fa fa-eye"></i>
+            <i class="fa fa-eye-slash"></i>
+          </div>
+        </div>
+        <br />
+        <!-- Confirm Password:<input type="password" id="passwords" />
         <span id="spn2"> </span>
         <div class="pw-display-toggle-btn">
           <i class="fa fa-eye"></i>
           <i class="fa fa-eye-slash"></i>
-        </div>
+        </div> -->
         <!-- <div class="pw-strength">
           <span>Weak</span>
           <span></span>
@@ -42,14 +49,16 @@
           <button class="reload-btn"><i class="fas fa-redo-alt"></i></button>
         </div>
 
-        <input
-          type="text"
-          placeholder="Enter captcha"
-          maxlength="6"
-          spellcheck="false"
-          required
-        />
-        <button class="check-btn">Check</button>
+        <form action="#" class="input-area">
+          <input
+            type="text"
+            placeholder="Enter captcha"
+            maxlength="6"
+            spellcheck="false"
+            required
+          />
+          <button class="check-btn">Check</button>
+        </form>
 
         <div class="status-text"></div>
       </div>
