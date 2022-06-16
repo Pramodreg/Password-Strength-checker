@@ -19,14 +19,18 @@
       <h2 style="text-align: center"><span>Sign-up</span> to Register</h2>
       <div class="form-element">
         Username:<input type="text" /><br />
-        Password:<input type="password" id="password" /><span id="spn1"> </span
-        ><br />
+        Password:
+        <div class="password-eye">
+          <input type="password" id="password" /><span id="spn1"> </span>
+          <div class="pw-display-toggle-btn">
+            <i class="fa fa-eye"></i>
+            <i class="fa fa-eye-slash"></i>
+          </div>
+        </div>
+        <br />
         Confirm Password:<input type="password" id="passwords" />
         <span id="spn2"> </span>
-        <div class="pw-display-toggle-btn">
-          <i class="fa fa-eye"></i>
-          <i class="fa fa-eye-slash"></i>
-        </div>
+
         <div class="pw-strength">
           <span>Weak</span>
           <span></span>
