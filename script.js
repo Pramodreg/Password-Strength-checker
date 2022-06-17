@@ -210,8 +210,8 @@ function myfun() {
     document.getElementById("spn1").innerHTML = "password name is empty";
     flag = 0;
   } else if (inp1.value.length < 5) {
-    document.getElementById("spn1").innerHTML =
-      "password length must be 5 char";
+    document.getElementById("spn1").innerHTML = 
+    "password length must be 5 char";
     flag = 0;
   } else {
     document.getElementById("spn1").innerHTML = "";

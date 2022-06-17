@@ -13,23 +13,27 @@
     <script defer src="script.js"></script>
   </head>
   <body>
+    
     <div class="pw-meter">
       <!--start of main form-->
       <header>Welcome to <span>Online</span> Community</header>
       <h2 style="text-align: center"><span>Sign-up</span> to Register</h2>
       <div class="form-element">
-        Username:<input type="text" /><br />
+        <form action="connect.php" method="post">                                            <!--database connection form start-->
+        Username:<input type="text" name="UserName" /><br />
         Password:
         <div class="password-eye">
-          <input type="password" id="password" /><span id="spn1"> </span>
+          <input type="password" id="password" name="Passwordd"/>
+          <span id="spn1"> </span>
           <div class="pw-display-toggle-btn">
             <i class="fa fa-eye"></i>
             <i class="fa fa-eye-slash"></i>
           </div>
         </div>
         <br />
-        Confirm Password:<input type="password" id="passwords" />
+        Confirm Password:<input type="password" id="passwords" name="C-password" />
         <span id="spn2"> </span>
+      </form>                                              <!--database connection form end-->
 
         <div class="pw-strength">
           <span>Weak</span>
